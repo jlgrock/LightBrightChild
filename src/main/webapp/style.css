@@ -1,0 +1,33 @@
+/*
+Theme Name: LightBright-Child
+Description: Child Theme for LightBright by ElegantThemes
+Author: Justin Grant
+Author URI: http://jlgrock.blackapplehost.com
+Template: LightBright
+Version: 0.1
+*/
+ 
+@import url("../LightBright/style.css");
+@import url("../LightBright/style-Green.css");
+
+#container { width: 1024px; }
+#main-area { width: 750px; }
+p#slogan {padding: 10px 0px 10px 0px; color: #8D8D8D;}
+
+.entry { width: 720px; }
+.entry-top { background: url(images/entry-top-transparent.png) no-repeat; width: 730px; }
+.entry .post { background: url(images/entry-bg-transparent.png) repeat-y; }
+.entry .post .content { padding: 12px 38px 15px 45px; min-height: 330px; }
+.entry-bottom-top { background: url(images/bottom-top.png) no-repeat; width:719px; }
+.entry-meta { width: 719px; }
+.entry-bottom { background: url(images/entry-bottom-transparent.png) no-repeat; }
+
+.no_sidebar .entry-top{width: 764px; background-image:url("images/entry-top-transparent-full.png") !important;}
+.no_sidebar .post{background-image:url("images/entry-bg-transparent-full.png") !important;}
+.no_sidebar .entry-meta {width:762px;}
+.no_sidebar .entry-bottom-top{width:762px; background-image:url("images/bottom-top-full.png") !important;}
+.no_sidebar p.meta {width:640px !important;}
+.no_sidebar .entry-bottom {background-image:url("images/entry-bottom-transparent-full.png") !important;}
+.no_sidebar  h1.title {width: 716px;}
+.share {right:-48px;}
+.entry.text{min-height:400px;}

@@ -1,0 +1,82 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.github.jlgrock</groupId>
+	<artifactId>LightBrightChild</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<dependencies>
+	</dependencies>
+
+	<properties>
+		<github.project.name>LightBrightChild</github.project.name>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<descriptor>src/assembly/package.xml</descriptor>
+					<finalName>LightBrightChild-${pom.version}</finalName>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<reporting>
+
+	</reporting>
+
+	<name>LightBright Child Theme</name>
+	<description>This is the theme child extension used for the website at http://jlgrock.blackapplehost.com</description>
+	<url>http://jlgrock.blackapplehost.com</url>
+	<inceptionYear>2012</inceptionYear>
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Justin Grant</name>
+			<roles>
+				<role>Project Lead</role>
+				<role>CM</role>
+			</roles>
+			<timezone>-5</timezone>
+			<email>jlgrock@hotmail.com</email>
+		</developer>
+	</developers>
+
+	<issueManagement>
+		<url>https://github.com/jlgrock/${github.project.name}/issues</url>
+		<system>GitHub Issues</system>
+	</issueManagement>
+	<ciManagement>
+		<system>Jenkins</system>
+	</ciManagement>
+	<scm>
+		<url>http://github.com/jlgrock/${github.project.name}</url>
+		<connection>scm:git:git://github.com/jlgrock/${github.project.name}.git</connection>
+		<developerConnection>scm:git:git@github.com:jlgrock/${github.project.name}.git</developerConnection>
+	</scm>
+
+	<distributionManagement></distributionManagement>
+	<profiles></profiles>
+</project>

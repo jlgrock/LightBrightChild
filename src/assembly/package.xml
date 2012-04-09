@@ -1,0 +1,16 @@
+<assembly>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<fileSets>
+		<fileSet>
+			<includes>
+				<include>README*</include>
+			</includes>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/webapp</directory>
+			<outputDirectory>target</outputDirectory>
+		</fileSet>
+	</fileSets>
+</assembly>
