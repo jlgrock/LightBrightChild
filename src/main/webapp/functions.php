@@ -44,4 +44,7 @@ function add_ext2_ext2type($ext) {
 }
 add_filter('upload_mimes','add_ext2_ext2type');
 
+function truncate_post($amount,$echo=true,$post='') {
+	return the_excerpt();
+};
 ?>
