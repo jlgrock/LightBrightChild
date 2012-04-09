@@ -9,13 +9,13 @@
 				<?php $permalink = get_permalink(); ?>
 			<?php #}; ?>
 
-			<a href="http://twitter.com/home?status=<?php the_title(); echo(' '); echo esc_url($permalink); ?>">
-				<img src="<?php bloginfo('template_directory'); ?>/images/share-icon1.png" alt="" />
+			<a href="http://www.facebook.com/sharer.php?u=<?php echo esc_js($permalink); ?>">
+				<img src="<?php bloginfo('stylesheet_directory'); ?>/images/share-icon11.png" alt="" />
 				<span class="tooltip">
-					<?php esc_html_e('share on Facebook','LightBright'); ?>
+					<?php _e('share on Facebook','LightBright'); ?>
 					<span class="left-arrow"></span>
-				</span>
-			</a>
+					</span>
+			</a> 
 			<a href="http://twitter.com/home?status=<?php the_title(); echo(' '); echo esc_url($permalink); ?>">
 				<img src="<?php bloginfo('template_directory'); ?>/images/share-icon1.png" alt="" />
 				<span class="tooltip">
@@ -23,13 +23,14 @@
 					<span class="left-arrow"></span>
 				</span>
 			</a>
-			<a href="http://twitter.com/home?status=<?php the_title(); echo(' '); echo esc_url($permalink); ?>">
-				<img src="<?php bloginfo('template_directory'); ?>/images/share-icon1.png" alt="" />
+			<a href="https://plusone.google.com/_/+1/confirm?hl=en&url=<?php echo esc_url($permalink); ?>"
+				onclick="window.open('https://plusone.google.com/_/+1/confirm?hl=en&url=	<?php echo esc_url($permalink); ?>','popup','toolbar=0,resizable=1,scrollbars=1,status=1,width=450,height=295'); return false">
+				<img src="<?php bloginfo('stylesheet_directory'); ?>/images/share-icon10.png" alt="" />
 				<span class="tooltip">
-					<?php esc_html_e('share on Google+','LightBright'); ?>
+					<?php esc_html_e('share on g+','LightBright'); ?>
 					<span class="left-arrow"></span>
 				</span>
-			</a>
+         </a>
 			<a href="http://del.icio.us/post?url=<?php the_permalink() ?>&amp;title=<?php the_title(); ?>">
 				<img src="<?php bloginfo('template_directory'); ?>/images/share-icon2.png" alt="" />
 				<span class="tooltip">
