@@ -18,7 +18,7 @@ p#slogan {padding: 10px 0px 10px 0px; color: #8D8D8D;}
 .entry-top { background: url(images/entry-top-transparent.png) no-repeat; width: 730px; }
 .entry .post { background: url(images/entry-bg-transparent.png) repeat-y; }
 .entry .post .content { padding: 12px 38px 15px 45px; min-height: 330px; }
-.entry-bottom-top { background: url(images/bottom-top.png) no-repeat; width:719px; }
+.entry-bottom-top { background: none; width:719px; }
 .entry-meta { width: 719px; }
 .entry-bottom { background: url(images/entry-bottom-transparent.png) no-repeat; }
 
@@ -30,4 +30,9 @@ p#slogan {padding: 10px 0px 10px 0px; color: #8D8D8D;}
 .no_sidebar .entry-bottom {background-image:url("images/entry-bottom-transparent-full.png") !important;}
 .no_sidebar  h1.title {width: 716px;}
 .share {right:-48px;}
-.entry.text{min-height:400px;}
+.entry.text{ min-height:400px; }
+
+blockquote p { font-size: 80%; line-hight: inherit; }
+body { font-size: 16px; color: #5d5d5d; }
+a { color: green; }
+p { line-height: 25px; }
