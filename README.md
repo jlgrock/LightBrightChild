@@ -10,7 +10,8 @@ and the assembly plugin.  This guarantees that everything is up to date and that
 consistent.  You are required to have this installed prior to executing a build.  Maven is 
 a Java (primarily) build tool and is a little more complicated than it could be, and I 
 suggest checking out my [Sky Child Theme](https://github.com/jlgrock/SkyChild).
-To execute this, just type "mvn clean install" from the root project directory.
+To execute this, just type "mvn clean install" from the root project directory. The zip file
+will be created and placed in the "<project>/target" directory.
 
 Theme development is described by reading the article at 
 http://codex.wordpress.org Theme_Development.
