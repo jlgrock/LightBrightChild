@@ -10,29 +10,61 @@ Version: 0.1
 @import url("../LightBright/style.css");
 @import url("../LightBright/style-Green.css");
 
-#container { width: 1024px; }
-#main-area { width: 750px; }
-p#slogan {padding: 10px 0px 10px 0px; color: #8D8D8D;}
+@media screen and (min-width: 1024px) {
+	#container { width: 1024px; }
+	#main-area { width: 750px; }
+	p#slogan {padding: 10px 0px 10px 0px; color: #8D8D8D;}
 
-.entry { width: 720px; }
-.entry-top { background: url(images/entry-top-transparent.png) no-repeat; width: 730px; }
-.entry .post { background: url(images/entry-bg-transparent.png) repeat-y; }
-.entry .post .content { padding: 12px 38px 15px 45px; min-height: 330px; }
-.entry-bottom-top { background: none; width:719px; }
-.entry-meta { width: 719px; }
-.entry-bottom { background: url(images/entry-bottom-transparent.png) no-repeat; }
+	.entry { width: 720px; }
+	.entry-top { background: url(images/entry-top-transparent.png) no-repeat; width: 730px; }
+	.entry .post { background: url(images/entry-bg-transparent.png) repeat-y; }
+	.entry .post .content { padding: 12px 38px 15px 45px; min-height: 330px; }
+	.entry-bottom-top { background: none; width:719px; }
+	.entry-meta { width: 719px; }
+	.entry-bottom { background: url(images/entry-bottom-transparent.png) no-repeat; }
 
-.no_sidebar .entry-top{width: 764px; background-image:url("images/entry-top-transparent-full.png") !important;}
-.no_sidebar .post{background-image:url("images/entry-bg-transparent-full.png") !important;}
-.no_sidebar .entry-meta {width:762px;}
-.no_sidebar .entry-bottom-top{width:762px; background-image:url("images/bottom-top-full.png") !important;}
-.no_sidebar p.meta {width:640px !important;}
-.no_sidebar .entry-bottom {background-image:url("images/entry-bottom-transparent-full.png") !important;}
-.no_sidebar  h1.title {width: 716px;}
-.share {right:-48px;}
-.entry.text{ min-height:400px; }
+	.no_sidebar .entry-top{width: 764px; background-image:url("images/entry-top-transparent-full.png") !important;}
+	.no_sidebar .post{background-image:url("images/entry-bg-transparent-full.png") !important;}
+	.no_sidebar .entry-meta {width:762px;}
+	.no_sidebar .entry-bottom-top{width:762px; background-image:url("images/bottom-top-full.png") !important;}
+	.no_sidebar p.meta {width:640px !important;}
+	.no_sidebar .entry-bottom {background-image:url("images/entry-bottom-transparent-full.png") !important;}
+	.no_sidebar  h1.title {width: 716px;}
+	.share {right:-48px;}
+	.entry.text{ min-height:400px; }
+	body { font-size: medium; color: #5d5d5d; }
+	h1.title, h2.title { width: 500px; }
+}
+
+@media screen and (min-width: 1400px) {
+	#container { width: 1400px; }
+	#main-area { width: 1024px; }
+	p#slogan {padding: 10px 0px 10px 0px; color: #8D8D8D;}
+
+	.entry { width: 996px; }
+	.entry-top { background: url(images/entry-top-large-transparent.png) no-repeat; width: 1000px; }
+	.entry .post { background: url(images/entry-bg-large-transparent.png) repeat-y; }
+	.entry .post .content { padding: 12px 38px 15px 45px; min-height: 330px; }
+	.entry-bottom-top { background: none; width:719px; }
+	.entry-meta { width: 989px; }
+	.entry-bottom { background: url(images/entry-bottom-large-transparent.png) no-repeat; }
+
+	.no_sidebar .entry-top{width: 1008px; background-image:url("images/entry-top-transparent-large-full.png") !important;}
+	.no_sidebar .post{background-image:url("images/entry-bg-transparent-large-full.png") !important;}
+	.no_sidebar .entry-meta {width:1006px;}
+	.no_sidebar .entry-bottom-top{width:762px; background-image:url("images/bottom-top-large-full.png") !important;}
+	.no_sidebar p.meta {width:640px !important;}
+	.no_sidebar .entry-bottom {background-image:url("images/entry-bottom-transparent-large-full.png") !important;}
+	.no_sidebar  h1.title {width: 960px;}
+	.share {right:-48px;}
+	.entry.text{ min-height:400px; }
+	body { font-size: large; color: #5d5d5d; }
+	h1.title, h2.title { width: 720px; }
+}
 
 blockquote p { font-size: 80%; line-hight: inherit; }
-body { font-size: 16px; color: #5d5d5d; }
+p, ul { line-height: 35px; }
 a { color: green; }
-p { line-height: 25px; }
+span.comment-count { visibility: hidden; }
+#subscribe-text { color: #468146; }
+body { font-family: 'Open Sans',sans-serif; }
